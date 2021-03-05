@@ -1,0 +1,259 @@
+15:08:40 **** Auto Build of configuration Debug for project LVDS0121 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../LVDS0121_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/demo.d" -MT"src/demo.o" -o "src/demo.o" "../src/demo.c"
+In file included from ../src/demo.c:22:0:
+../src/LVDS_driver.h:47:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^~~~~~~
+../src/LVDS_driver.h:148:1: warning: parameter names (without types) in function declaration
+ static void TxIntrHandler(AxiDma);
+ ^~~~~~
+../src/LVDS_driver.h:149:1: warning: parameter names (without types) in function declaration
+ static void RxIntrHandler(AxiDma);
+ ^~~~~~
+In file included from ../src/Uart_driver.h:21:0,
+                 from ../src/demo.c:23:
+../../LVDS0121_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../LVDS0121_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+In file included from ../src/demo.c:24:0:
+../src/xdma_driver.h:49:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^~~~~~~
+../src/xdma_driver.h:149:1: warning: parameter names (without types) in function declaration
+ static void TxIntrHandler(AxiDma);
+ ^~~~~~
+../src/xdma_driver.h:150:1: warning: parameter names (without types) in function declaration
+ static void RxIntrHandler(AxiDma);
+ ^~~~~~
+In file included from ../src/demo.c:28:0:
+../../LVDS0121_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/demo.c: In function 'Uart_demo':
+../src/demo.c:95:5: warning: implicit declaration of function 'XUartNs550_SetBaudRate'; did you mean 'XUartPs_SetBaudRate'? [-Wimplicit-function-declaration]
+     XUartNs550_SetBaudRate(&Uart0Ns550Instance,115200);
+     ^~~~~~~~~~~~~~~~~~~~~~
+     XUartPs_SetBaudRate
+In file included from ../../LVDS0121_bsp/ps7_cortexa9_0/include/xgpio.h:135:0,
+                 from ../src/Fire.h:14,
+                 from ../src/demo.c:21:
+../../LVDS0121_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/demo.c:99:18: note: in expansion of macro 'XST_FAILURE'
+           return XST_FAILURE;
+                  ^~~~~~~~~~~
+../src/demo.c:53:6: note: declared here
+ void Uart_demo()
+      ^~~~~~~~~
+In file included from ../../LVDS0121_bsp/ps7_cortexa9_0/include/xgpio.h:135:0,
+                 from ../src/Fire.h:14,
+                 from ../src/demo.c:21:
+../../LVDS0121_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/demo.c:110:18: note: in expansion of macro 'XST_FAILURE'
+           return XST_FAILURE;
+                  ^~~~~~~~~~~
+../src/demo.c:53:6: note: declared here
+ void Uart_demo()
+      ^~~~~~~~~
+In file included from ../../LVDS0121_bsp/ps7_cortexa9_0/include/xgpio.h:135:0,
+                 from ../src/Fire.h:14,
+                 from ../src/demo.c:21:
+../../LVDS0121_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/demo.c:119:15: note: in expansion of macro 'XST_FAILURE'
+        return XST_FAILURE;
+               ^~~~~~~~~~~
+../src/demo.c:53:6: note: declared here
+ void Uart_demo()
+      ^~~~~~~~~
+In file included from ../../LVDS0121_bsp/ps7_cortexa9_0/include/xgpio.h:135:0,
+                 from ../src/Fire.h:14,
+                 from ../src/demo.c:21:
+../../LVDS0121_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/demo.c:128:12: note: in expansion of macro 'XST_FAILURE'
+     return XST_FAILURE;
+            ^~~~~~~~~~~
+../src/demo.c:53:6: note: declared here
+ void Uart_demo()
+      ^~~~~~~~~
+In file included from ../../LVDS0121_bsp/ps7_cortexa9_0/include/xgpio.h:135:0,
+                 from ../src/Fire.h:14,
+                 from ../src/demo.c:21:
+../../LVDS0121_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/demo.c:137:12: note: in expansion of macro 'XST_FAILURE'
+     return XST_FAILURE;
+            ^~~~~~~~~~~
+../src/demo.c:53:6: note: declared here
+ void Uart_demo()
+      ^~~~~~~~~
+In file included from ../../LVDS0121_bsp/ps7_cortexa9_0/include/xgpio.h:135:0,
+                 from ../src/Fire.h:14,
+                 from ../src/demo.c:21:
+../../LVDS0121_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/demo.c:146:12: note: in expansion of macro 'XST_FAILURE'
+     return XST_FAILURE;
+            ^~~~~~~~~~~
+../src/demo.c:53:6: note: declared here
+ void Uart_demo()
+      ^~~~~~~~~
+In file included from ../../LVDS0121_bsp/ps7_cortexa9_0/include/xgpio.h:135:0,
+                 from ../src/Fire.h:14,
+                 from ../src/demo.c:21:
+../../LVDS0121_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/demo.c:155:12: note: in expansion of macro 'XST_FAILURE'
+     return XST_FAILURE;
+            ^~~~~~~~~~~
+../src/demo.c:53:6: note: declared here
+ void Uart_demo()
+      ^~~~~~~~~
+In file included from ../../LVDS0121_bsp/ps7_cortexa9_0/include/xgpio.h:135:0,
+                 from ../src/Fire.h:14,
+                 from ../src/demo.c:21:
+../../LVDS0121_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/demo.c:165:12: note: in expansion of macro 'XST_FAILURE'
+     return XST_FAILURE;
+            ^~~~~~~~~~~
+../src/demo.c:53:6: note: declared here
+ void Uart_demo()
+      ^~~~~~~~~
+In file included from ../../LVDS0121_bsp/ps7_cortexa9_0/include/xgpio.h:135:0,
+                 from ../src/Fire.h:14,
+                 from ../src/demo.c:21:
+../../LVDS0121_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/demo.c:175:12: note: in expansion of macro 'XST_FAILURE'
+     return XST_FAILURE;
+            ^~~~~~~~~~~
+../src/demo.c:53:6: note: declared here
+ void Uart_demo()
+      ^~~~~~~~~
+In file included from ../../LVDS0121_bsp/ps7_cortexa9_0/include/xgpio.h:135:0,
+                 from ../src/Fire.h:14,
+                 from ../src/demo.c:21:
+../../LVDS0121_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/demo.c:184:12: note: in expansion of macro 'XST_FAILURE'
+     return XST_FAILURE;
+            ^~~~~~~~~~~
+../src/demo.c:53:6: note: declared here
+ void Uart_demo()
+      ^~~~~~~~~
+In file included from ../../LVDS0121_bsp/ps7_cortexa9_0/include/xgpio.h:135:0,
+                 from ../src/Fire.h:14,
+                 from ../src/demo.c:21:
+../../LVDS0121_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/demo.c:193:12: note: in expansion of macro 'XST_FAILURE'
+     return XST_FAILURE;
+            ^~~~~~~~~~~
+../src/demo.c:53:6: note: declared here
+ void Uart_demo()
+      ^~~~~~~~~
+../src/demo.c:55:6: warning: unused variable 'i' [-Wunused-variable]
+  int i,Status;
+      ^
+../src/demo.c: In function 'Xdma_demo':
+../src/demo.c:330:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^~~~~~
+In file included from ../../LVDS0121_bsp/ps7_cortexa9_0/include/xgpio.h:135:0,
+                 from ../src/Fire.h:14,
+                 from ../src/demo.c:21:
+../src/demo.c: In function 'LVDS_demo':
+../../LVDS0121_bsp/ps7_cortexa9_0/include/xstatus.h:64:41: warning: 'return' with a value, in function returning void
+ #define XST_SUCCESS                     0L
+                                         ^
+../src/demo.c:474:9: note: in expansion of macro 'XST_SUCCESS'
+  return XST_SUCCESS;
+         ^~~~~~~~~~~
+../src/demo.c:419:6: note: declared here
+ void LVDS_demo()
+      ^~~~~~~~~
+../src/demo.c:426:15: warning: variable 'ret' set but not used [-Wunused-but-set-variable]
+  unsigned int ret = 0;
+               ^~~
+../src/demo.c:423:5: warning: unused variable 'wBuffer' [-Wunused-variable]
+  u8 wBuffer[256] = {0};
+     ^~~~~~~
+../src/demo.c:421:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^~~~~~
+../src/demo.c: In function 'speed_demo':
+../src/demo.c:499:6: warning: variable 'Length' set but not used [-Wunused-but-set-variable]
+  int Length;
+      ^~~~~~
+../src/demo.c:498:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^~~~~~
+In file included from ../src/demo.c:24:0:
+../src/demo.c: At top level:
+../src/xdma_driver.h:131:12: warning: 'CheckData' declared 'static' but never defined [-Wunused-function]
+ static int CheckData(int Length, u8 StartValue);
+            ^~~~~~~~~
+../src/xdma_driver.h:141:12: warning: 'SetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int SetupIntrSystem(INTC * IntcInstancePtr,
+            ^~~~~~~~~~~~~~~
+../src/xdma_driver.h:143:13: warning: 'DisableIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static void DisableIntrSystem(INTC * IntcInstancePtr,
+             ^~~~~~~~~~~~~~~~~
+../src/xdma_driver.h:149:13: warning: 'TxIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void TxIntrHandler(AxiDma);
+             ^~~~~~~~~~~~~
+../src/xdma_driver.h:150:13: warning: 'RxIntrHandler' declared 'static' but never defined [-Wunused-function]
+ static void RxIntrHandler(AxiDma);
+             ^~~~~~~~~~~~~
+In file included from ../src/demo.c:23:0:
+../src/Uart_driver.h:126:12: warning: 'UartNs550SetupIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static int UartNs550SetupIntrSystem(INTC *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/Uart_driver.h:130:13: warning: 'UartNs550DisableIntrSystem' declared 'static' but never defined [-Wunused-function]
+ static void UartNs550DisableIntrSystem(INTC *IntcInstancePtr, u16 UartIntrId);
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/demo.c:24:0:
+../src/xdma_driver.h:160:13: warning: 'Intc' defined but not used [-Wunused-variable]
+ static INTC Intc; /* Instance of the Interrupt Controller */
+             ^~~~
+../src/xdma_driver.h:107:16: warning: 'Gpio' defined but not used [-Wunused-variable]
+ static XGpioPs Gpio; /* The Instance of the GPIO Driver */
+                ^~~~
+'Finished building: ../src/demo.c'
+' '
+'Building target: LVDS0121.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../LVDS0121_bsp/ps7_cortexa9_0/lib -o "LVDS0121.elf"  ./src/Fire.o ./src/LVDS_driver.o ./src/Uart_driver.o ./src/count.o ./src/demo.o ./src/lib_fifo.o ./src/xdma_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LVDS0121.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size LVDS0121.elf  |tee "LVDS0121.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  72096	   4384	  41760	 118240	  1cde0	LVDS0121.elf
+'Finished building: LVDS0121.elf.size'
+' '
+
+15:08:42 Build Finished (took 1s.333ms)
+

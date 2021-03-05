@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]D:\Users\xin.han\Desktop\716test\LVDS0121\fsbl\Debug\fsbl.elf
+	D:\Users\xin.han\Desktop\LVDS\LVDS0121\top.bit
+	D:\Users\xin.han\Desktop\716test\LVDS0121\hello\Debug\hello.elf
+}

@@ -1,0 +1,6 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	D:\Users\xin.han\Desktop\716test\LVDS0121\top_hw_platform_0\top.bit
+	D:\Users\xin.han\Desktop\716test\LVDS0121\hello\Debug\hello.elf
+}
